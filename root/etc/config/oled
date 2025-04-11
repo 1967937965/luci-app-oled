@@ -1,0 +1,9 @@
+config oled
+    option screen_type 'ssd1306'
+    option interface 'i2c'
+    option screen_width '128'
+    option screen_height '32'
+    option rotation '0'
+    option color_mode 'rgb'
+    option refresh_rate '50'
+    option init_commands ''

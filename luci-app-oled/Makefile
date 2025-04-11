@@ -24,3 +24,11 @@ endef
 include $(TOPDIR)/feeds/luci/luci.mk
 
 # call BuildPackage - OpenWrt buildroot signature
+
+define Package/luci-app-oled/config
+    config ST7735S_SUPPORT
+        bool "Enable ST7735S SPI display support"
+        default n
+        help
+            This option enables support for ST7735S SPI displays.
+endef
